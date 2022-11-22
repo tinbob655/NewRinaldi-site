@@ -1,0 +1,105 @@
+h1 {
+    font-family: Helvetica;
+    color: #4cc530;
+    text-align: center;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: Verdana;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 800;
+    color: #4cc530;
+}
+
+.mainheader {
+    position: fixed;
+    border-top: 5px solid #232324;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    top: 0;
+    width: 99%;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    height: 150px;
+}
+
+img.rounded {
+    display: block;
+    border-radius: 50%;
+}
+
+th.link {
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+th.link:hover {
+    background-color: #8b8888;
+}
+
+.changingbackground {
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: changingimage;
+    animation-duration: 32s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fadein {
+    animation-name: fade-entrance;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes fade-entrance {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes changingimage {
+    12.5% {
+        background-image: url('images/Background Images/Alex Comp 1 Image.png');
+    }
+    25%{
+        background-image: url('images/Background Images/Cookin Pasta.jpeg');
+    }
+    37.5%{
+        background-image: url('images/Background Images/Alex Comp 3 Image.png');
+    }
+    50%{
+        background-image: url('images/Background Images/logo.png');
+    }
+    62.5%{
+        background-image: url('images/Background Images/NewRinaldi Is Greater.jpg');
+    }
+    75%{
+        background-image: url('images/Background Images/Will R Comp 1 Image.png');
+    }
+    87.5%{
+        background-image: url('images/Background Images/Will R Comp 2 Image.png');
+    }
+    100%{
+        background-image: url('images/Background Images/Iron Duke.jpg');
+    }
+}

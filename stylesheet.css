@@ -19,6 +19,10 @@ p {
     color: #4cc530;
 }
 
+body {
+    background-color: #232324;
+}
+
 .mainheader {
     position: fixed;
     border-top: 5px solid #232324;

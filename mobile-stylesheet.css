@@ -1,3 +1,63 @@
 h1 {
     font-family: Helvetica;
+    color: #4cc530;
+    text-align: center;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: Verdana;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 800;
+    color: #4cc530;
+}
+
+body {
+    background-color: #232324;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    height: 150px;
+}
+
+img.rounded {
+    display: block;
+    border-radius: 50%;
+}
+
+th.link {
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+th.link:hover {
+    background-color: #8b8888;
+}
+
+.fadein {
+    animation-name: fade-entrance;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes fade-entrance {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }

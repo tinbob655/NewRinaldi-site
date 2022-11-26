@@ -2,9 +2,14 @@
 <html>
     <head>
         <title>
-            NewRinaldi/Merch
+            NewRinaldi.site/Merch
         </title>
         <link rel="stylesheet" href="stylesheet.css"/>
+        <script>
+            if (window.innerWidth <= 700) {
+                document.location = "merch-mobile.html";
+            }
+        </script>
     </head>
     <body style="background-color: #232324;">
         <!--START OF HEADER-->
@@ -17,14 +22,14 @@
                         </a>
                     </h2>
                 </th>
-                <th class="link" style="width: 33%;">
+                <th class="link">
                     <h2>
                         <a href="Music.html" class="link">
                             Music
                         </a>
                     </h2>
                 </th>
-                <th style="width: 33%;" class="link">
+                <th class="link">
                     <h2 style="color: #e6d735;">
                         <a href="index.html" class="link">
                             Home
@@ -45,7 +50,10 @@
                      it anyway cause NewRinaldi
                 </a>
             </p>
-            <img src="images/Background Images/Logo Dark.png" style="height: 350px; margin-left: 22.5%;"/>
+            <img src="images/Background Images/Logo Dark.png" style="height: 350px;
+                                                                     display: block;
+                                                                      margin-right: auto;
+                                                                      margin-left: auto;"/>
         </div>
     </body>
 </html>

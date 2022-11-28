@@ -6,8 +6,8 @@
         </title>
         <link rel="stylesheet" href="stylesheet.css"/>
         <script>
-            if (window.innerWidth <= 700) {
-                document.location = "music-mobile.html";
+            if (navigator.userAgentData.mobile == true) {
+                document.location = "mobile-music.html";
             }
         </script>
     </head>

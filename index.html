@@ -5,7 +5,11 @@
             NewRinaldi.site
         </title>
         <link rel="stylesheet" href="stylesheet.css"/>
-        <script src="scripts.js"></script>
+        <script>
+            if (navigator.userAgentData.mobile == true) {
+                document.location = "mobile-index.html";
+            }
+        </script>
     </head>
     <body>
         <!--START OF HEADER-->

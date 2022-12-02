@@ -11,3 +11,5 @@ function toggle_dropdown_menu() {
         toggle++;
     }
 }
+
+window.onload = (toggle = 0);

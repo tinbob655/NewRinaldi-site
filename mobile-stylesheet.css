@@ -8,7 +8,7 @@ h1 {
 h2 {
     font-family: Verdana;
     font-size: 50;
-    color: #FF0000;
+    color: #ffffff;
     font-weight: 400;
     text-align: center;
 }
@@ -18,7 +18,7 @@ p {
     font-size: 35;
     text-align: center;
     font-weight: 800;
-    color: #ff0000;
+    color: #4cc530;
 }
 
 body {
@@ -30,8 +30,39 @@ body {
     color: inherit;
 }
 
+.show-dropdown {
+    animation-name: fade-entrance;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+    opacity: 1.0;
+}
+
+.hide-dropdown {
+    animation-name: fade-exit;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+    opacity: 0.0;
+}
+
+.dropdown-button {
+    background-color: #232324;
+}
+
+.dropdown-content {
+    max-width: 100%;
+}
+
 img {
     height: 700px;
+}
+
+img.centered {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: inherit;
 }
 
 img.rounded {
@@ -57,9 +88,18 @@ th.link:hover {
 
 @keyframes fade-entrance {
     from {
-        opacity: 0%;
+        opacity: 0.0;
     }
     to {
-        opacity: 100%;
+        opacity: 1.0;
+    }
+}
+
+@keyframes fade-exit {
+    from{
+        opacity: inherit;
+    }
+    to{
+        opacity: 0.0;
     }
 }

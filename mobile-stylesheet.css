@@ -30,6 +30,10 @@ body {
     color: inherit;
 }
 
+.invisible {
+    opacity: 0.0;
+}
+
 .show-dropdown {
     animation-name: fade-entrance;
     animation-duration: 0.5s;

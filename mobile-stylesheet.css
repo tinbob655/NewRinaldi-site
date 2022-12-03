@@ -60,14 +60,13 @@ body {
 }
 
 img {
-    height: 700px;
+    height: 300px;
 }
 
 img.centered {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    height: inherit;
 }
 
 img.rounded {

@@ -13,29 +13,27 @@
         <script src="scripts.js"></script>
     </head>
     <body>
-        <div style="width: 15%; float: left; position: fixed;">
-            <button onclick="toggle_dropdown_menu()" class="dropdown-button" style="border: none;">
-                <img src="images/Back button.png" style="max-width: 100%; height: auto;"/>
-            </button>
-            <div id="menu-dropdown" class="dropdown-content invisible">
-                <h2 style="color: #e6d735;">
-                    <a href="mobile-index.html" class="link">
-                        Home
-                    </a>
-                </h2>
-                <h2>
-                    <a href="mobile-media.html" class="link">
-                        Media
-                    </a>
-                </h2>
-                <h2>
-                    <a href="mobile-music.html" class="link">
-                        Music
-                    </a>
-                </h2>
-            </div>
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn link" style="color: #4cc530;" onclick="closeNav()">&times;</a>
+            <h2>
+                <a href="mobile-index.html" class="link" style="color: #e6d735;">
+                    Home
+                </a>
+            </h2>
+            <h2>
+                <a href="mobile-merch.html" class="link">
+                    Merch
+                </a>
+            </h2>
+            <h2>
+                <a href="mobile-music.html" class="link">
+                    Music
+                </a>
+            </h2>
+            <img src="images/Background Images/Logo.png" class="centered"/>
         </div>
-        <div style="margin-left: 15%;">
+        <img src="images/Back button.png" onclick="openNav()" style="max-width: 100%; height: auto;"/>
+        <div id="main">
             <div class="fadein">
                 <h1>
                     We have a significant quantity of merch of slightly above average quality

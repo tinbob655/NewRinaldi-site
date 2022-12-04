@@ -31,32 +31,28 @@ body {
     color: inherit;
 }
 
-.invisible {
-    opacity: 0.0;
+div.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #363636;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
-.show-dropdown {
-    animation-name: fade-entrance;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-direction: forwards;
-    opacity: 1.0;
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-.hide-dropdown {
-    animation-name: fade-exit;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-direction: forwards;
-    opacity: 0.0;
-}
-
-.dropdown-button {
-    background-color: #232324;
-}
-
-.dropdown-content {
-    max-width: 100%;
+.sidenav a:hover {
+    color: #8b8888;
 }
 
 img {

@@ -47,6 +47,14 @@ img.rounded {
     border-radius: 50%;
 }
 
+img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: inherit;
+    width: inherit;
+}
+
 th.link {
     transition-property: background-color;
     transition-duration: 1s;

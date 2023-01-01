@@ -3,7 +3,7 @@ function init() {
         var HTMLfilename = document.location.href;
         var filename = HTMLfilename.substring(HTMLfilename.lastIndexOf('/') + 1);
         filename = filename.replace('mobile-', '');
-        //document.location = filename;
+        document.location = filename;
         console.log(filename)
     };
 };

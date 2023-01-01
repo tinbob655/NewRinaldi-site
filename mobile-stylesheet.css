@@ -26,6 +26,11 @@ body {
     background-color: #232324;
 }
 
+audio {
+    z-index: -1;
+    position: relative;
+}
+
 .link {
     text-decoration: none;
     color: inherit;

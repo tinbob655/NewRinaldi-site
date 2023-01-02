@@ -27,7 +27,6 @@ body {
 }
 
 audio {
-    z-index: -1;
     position: relative;
 }
 

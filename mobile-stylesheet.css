@@ -31,19 +31,6 @@ audio {
     position: relative;
 }
 
-iframe {
-    border: none;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    background-color: #363636;
-    border-radius: 10px;
-    margin-bottom: 25vh;
-    height: 500px;
-    padding: 7px;
-}
-
 .link {
     text-decoration: none;
     color: inherit;

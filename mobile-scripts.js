@@ -77,4 +77,4 @@ function gallery_move() {
 
 var gallery_num = 1;
 
-//window.onload = init()
+window.onload = init()

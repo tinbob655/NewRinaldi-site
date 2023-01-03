@@ -71,7 +71,7 @@ function gallery_refresh() {
 };
 
 function gallery_move() {
-    gallery_change(gallery_images[is_in_bounds(0, 8, gallery_num%9)], gallery_images[is_in_bounds(0, 8, (gallery_num%9)+1)], gallery_images[is_in_bounds(0, 8, (gallery_num%9)+2)]);
+    gallery_change(gallery_images[is_in_bounds(0, 8, gallery_num%9)], gallery_images[is_in_bounds(0, 8, (gallery_num%9) +1)], gallery_images[is_in_bounds(0, 8, (gallery_num%9) +2)]);
     gallery_num++;
 };
 

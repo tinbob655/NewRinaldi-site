@@ -2,9 +2,13 @@ function init() {
     if (navigator.userAgentData.mobile == false) {
         var HTMLfilename = document.location.href;
         var filename = HTMLfilename.substring(HTMLfilename.lastIndexOf('/') + 1);
-        filename = filename.replace('mobile-', '');
+        if (filename != '') {
+            filename = filename.replace('mobile-', '');
+        }
+        else if (filename == '') {
+            filename = 'index.html'
+        };
         document.location = filename;
-        console.log(filename)
     };
 };
 

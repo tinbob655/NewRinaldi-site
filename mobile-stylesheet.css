@@ -70,6 +70,11 @@ img.centered {
     margin-left: auto;
 }
 
+img.gallery {
+    height: 100%;
+    width: 100%;
+}
+
 img.rounded {
     display: block;
     border-radius: 50%;

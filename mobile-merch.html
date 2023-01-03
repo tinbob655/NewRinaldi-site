@@ -32,11 +32,11 @@
                 </a>
             </h2>
         </div>
-        <img src="images/Back button.png" onclick="openNav()" style="max-width: 100%; height: auto;"/>
+        <img src="images/Interactive Elements/Back button.png" onclick="openNav()" style="max-width: 100%; height: auto;"/>
         <div id="main">
             <div class="fadein">
                 <h1>
-                    We have a significant quantity of merch of slightly above average quality
+                    We have a significant ammount of merch, some is slightly above average quality
                 </h1>
                 <br/>
                 <p>
@@ -45,41 +45,33 @@
                         it anyway cause NewRinaldi
                     </a>
                 </p>
-                <table style="width: 75%; margin-right: auto; margin-left: auto; margin-top: 100px;">
+                <table style="width: 100%; margin-right: auto; margin-left: auto; margin-top: 100px;">
                     <tr>
-                        <th colspan="3">
+                        <th colspan="5">
                             <h2>
                                 We sell tons of cloth
                             </h2>
                         </th>
                     </tr>
-                    <tr>
-                        <td>
-                            <p>
-                                From hoodies
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                To t-shirts
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                To funniez
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/Merch/White Hoodie.webp" class="centered"/>
-                        </td>
-                        <td>
-                            <img src="images/Merch/Black t-shirt.webp" class="centered"/>
-                        </td>
-                        <td>
-                            <img src="images/Merch/Todd is bad at golf t-shirt.webp" class="centered"/>
-                        </td>
+                    <table id="gallery" style="transition-property: opacity; transition-duration: 0.5s;">
+                        <tr>
+                            <td style="width: 12.5%;">
+                                <img src="images/Interactive Elements/refresh.svg" class="gallery" onclick="gallery_refresh()"/>
+                            </td>
+                            <td style="width: 20%;">
+                                <img src="images/Merch/black hoodie.webp" class="gallery" id="image1"/>
+                            </td>
+                            <td style="width: 35%;">
+                                <img src="images/Merch/black long sleeve t-shirt.webp" class="gallery" id="image2"/>
+                            </td>
+                            <td style="width: 20%">
+                                <img src="images/Merch/Black t-shirt.webp" class="gallery" id="image3"/>
+                            </td>
+                            <td style="width: 12.5%;">
+                                <img src="images/Interactive Elements/right arrow.svg" class="gallery" onclick="gallery_move()"/>
+                            </td>
+                        </tr>
+                    </table>
                     </tr>
                 </table>
                 <div style="margin-top: 100px;">

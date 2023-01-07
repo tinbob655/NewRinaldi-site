@@ -24,6 +24,8 @@ p {
 
 body {
     background-color: #232324;
+    transition-property: opacity;
+    transition-duration: 0.5s;
 }
 
 audio {

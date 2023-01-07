@@ -1,15 +1,15 @@
 function init() {
-    if (navigator.userAgentData.mobile == false) {
-        var HTMLfilename = document.location.href;
-        var filename = HTMLfilename.substring(HTMLfilename.lastIndexOf('/') + 1);
-        if (filename != '') {
-            filename = filename.replace('mobile-', '');
-        }
-        else if (filename == '') {
-            filename = 'index.html';
-        };
-        document.location = filename;
-    };
+    // if (navigator.userAgentData.mobile == false) {
+    //     var HTMLfilename = document.location.href;
+    //     var filename = HTMLfilename.substring(HTMLfilename.lastIndexOf('/') + 1);
+    //     if (filename != '') {
+    //         filename = filename.replace('mobile-', '');
+    //     }
+    //     else if (filename == '') {
+    //         filename = 'index.html';
+    //     };
+    //     document.location = filename;
+    // };
     const location = document.location.href.substring(document.location.href.lastIndexOf('/') +1);
     if (location != 'mobile-index.html' && location != 'mobile-music.html') {
         setTimeout(() => {
@@ -104,6 +104,13 @@ function gallery_refresh() {
 function gallery_move() {
     gallery_change(gallery_images[is_in_bounds(0, 8, gallery_num%9)], gallery_images[is_in_bounds(0, 8, (gallery_num%9) +1)], gallery_images[is_in_bounds(0, 8, (gallery_num%9) +2)]);
     gallery_num++;
+};
+
+function change_page(page) {
+    document.body.style.opacity = 0.0;
+    setTimeout(() => {
+        document.location = page;
+    }, 501);
 };
 
 var gallery_num = 1;

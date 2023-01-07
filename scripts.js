@@ -98,6 +98,13 @@ function introbox_cleared() {
     next_track();
 };
 
+function change_page(page) {
+    document.body.style.opacity = 0.0;
+    setTimeout(() => {
+        document.location = page;
+    }, 501);
+};
+
 gallery_num = 1;
 var track = Math.floor(Math.random() *2);
 

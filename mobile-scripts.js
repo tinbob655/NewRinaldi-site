@@ -1,15 +1,15 @@
 function init() {
-    // if (navigator.userAgentData.mobile == false) {
-    //     var HTMLfilename = document.location.href;
-    //     var filename = HTMLfilename.substring(HTMLfilename.lastIndexOf('/') + 1);
-    //     if (filename != '') {
-    //         filename = filename.replace('mobile-', '');
-    //     }
-    //     else if (filename == '') {
-    //         filename = 'index.html';
-    //     };
-    //     document.location = filename;
-    // };
+    if (navigator.userAgentData.mobile == false) {
+        var HTMLfilename = document.location.href;
+        var filename = HTMLfilename.substring(HTMLfilename.lastIndexOf('/') + 1);
+        if (filename != '') {
+            filename = filename.replace('mobile-', '');
+        }
+        else if (filename == '') {
+            filename = 'index.html';
+        };
+        document.location = filename;
+    };
     const location = document.location.href.substring(document.location.href.lastIndexOf('/') +1);
     if (location != 'mobile-index.html' && location != 'mobile-music.html') {
         setTimeout(() => {

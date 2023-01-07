@@ -45,33 +45,38 @@
                         it anyway cause NewRinaldi
                     </a>
                 </p>
-                <table style="width: 100%; margin-right: auto; margin-left: auto; margin-top: 100px;">
+                <table class="gallery" style="width: 100%; margin-right: auto; margin-left: auto;">
                     <tr>
-                        <th colspan="5">
+                        <th colspan="3">
                             <h2>
                                 We sell tons of cloth
                             </h2>
                         </th>
                     </tr>
-                    <table id="gallery" style="transition-property: opacity; transition-duration: 0.5s;">
-                        <tr>
-                            <td style="width: 12.5%;">
-                                <img src="images/Interactive Elements/refresh.svg" class="gallery" onclick="gallery_refresh()"/>
-                            </td>
-                            <td style="width: 20%;">
-                                <img src="images/Merch/black hoodie.webp" class="gallery" id="image1"/>
-                            </td>
-                            <td style="width: 35%;">
-                                <img src="images/Merch/black long sleeve t-shirt.webp" class="gallery" id="image2"/>
-                            </td>
-                            <td style="width: 20%">
-                                <img src="images/Merch/Black t-shirt.webp" class="gallery" id="image3"/>
-                            </td>
-                            <td style="width: 12.5%;">
-                                <img src="images/Interactive Elements/right arrow.svg" class="gallery" onclick="gallery_move()"/>
-                            </td>
-                        </tr>
-                    </table>
+                    <tr>
+                        <td style="width: 12.5%;">
+                            <img src="images/Interactive Elements/refresh.svg" style="width: 100%; height: auto;" onclick="gallery_refresh()"/>
+                        </td>
+                        <td>
+                            <table id="gallery" style="transition-property: opacity; transition-duration: 0.5s;">
+                                <div class="gallery">
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            <img src="images/Merch/black hoodie.webp" style="width: 100%; height: auto;" id="image1"/>
+                                        </td>
+                                        <td style="width: 35%;">
+                                            <img src="images/Merch/black long sleeve t-shirt.webp" style="width: 100%; height: auto;" id="image2"/>
+                                        </td>
+                                        <td style="width: 20%;">
+                                            <img src="images/Merch/Black t-shirt.webp" style="width: 100%; height: auto;" id="image3"/>
+                                        </td>
+                                    </tr>
+                                </div>
+                            </table>
+                        </td>
+                        <td style="width: 12.5%;">
+                            <img src="images/Interactive Elements/right arrow.svg" style="width: 100%; height: auto;" onclick="gallery_move()"/>
+                        </td>
                     </tr>
                 </table>
                 <div style="margin-top: 100px;">

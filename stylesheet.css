@@ -44,6 +44,13 @@ audio {
     color: inherit;
 }
 
+table.gallery {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #6d6c6c;
+    box-shadow: 0 0 50px #6d6c6c;
+}
+
 img {
     height: 150px;
 }

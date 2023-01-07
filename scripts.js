@@ -10,6 +10,12 @@ function init() {
         };
         document.location = filename;
     };
+    const location = document.location.href.substring(document.location.href.lastIndexOf('/') +1);
+    if (location != 'index.html' && location != 'music.html') {
+        setTimeout(()=> {
+            next_track();
+        }, 1000);
+    };
 };
 
 const gallery_images = ['images/Merch/black hoodie.webp',
@@ -67,6 +73,32 @@ function gallery_move() {
     gallery_num++;
 };
 
+function next_track() {
+    const audio = document.getElementById('audio');
+    audio.pause()
+    if (track%2 == 0) {
+        audio.src = 'Music/R4R theme.mp3';
+    }
+    else {
+        audio.src = 'Music/March Of Leader Ransome.mp3';
+    };
+    track++;
+    setTimeout(() => {
+        audio.play();
+    }, 500);
+};
+
+function introbox_cleared() {
+    const introbox = document.getElementById('introbox');
+    introbox.classList.add('cleared');
+    setTimeout(() => {
+        introbox.style.with = 0;
+        introbox.style.height = 0;
+    }, 1001);
+    next_track();
+};
+
 gallery_num = 1;
+var track = Math.floor(Math.random() *2);
 
 window.onload = init();

@@ -6,8 +6,18 @@
         </title>
         <link rel="stylesheet" href="mobile-stylesheet.css"/>
         <script src="mobile-scripts.js"></script>
+        <audio id="audio" onended="next_track()">
+            <source src="" type="audio/mp3"/>
+        </audio>
     </head>
     <body>
+        <div class="introbox" id="introbox">
+            <button onclick="introbox_cleared()">
+                <h1>
+                    Please click to agree to Will harvesting basically all of your data and selling it to the Chinese
+                </h1>
+            </button>
+        </div>
         <!--START OF HEADER-->
         <table>
             <tr style="background-color: #363636; margin-top: 50px;">

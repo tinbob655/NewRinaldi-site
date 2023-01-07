@@ -6,6 +6,9 @@
         </title>
         <link rel="stylesheet" href="mobile-stylesheet.css"/>
         <script src="mobile-scripts.js"></script>
+        <audio id="audio" onended="next_track()">
+            <source src="" type="audio/mp3"/>
+        </audio>
     </head>
     <body>
         <div id="sidenav" class="sidenav">
@@ -83,13 +86,6 @@
                         </th>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <p>
-                                Will R Comp 1 V2
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
                         <td>
                             <img src="images/Album Covers/Alex Comp 1 V2 Image.png" class="rounded" style="float: right;"/>
                         </td>
@@ -100,9 +96,16 @@
                         </td>
                     </tr>
                     <tr>
+                        <td colspan="2">
+                            <p>
+                                Will R Comp 1 V2
+                            </p>
+                        </td>
+                    </tr> 
+                    <tr>
                         <td>
-                            <audio controls controlslist="nodownload" loop>
-                                <source src="Music/Will-R-Comp-1-Remix-1.MP3" type="audio/mp3" style="float: right;"/>
+                            <audio controls controlslist="nodownload" loop style="float: right;">
+                                <source src="Music/Will-R-Comp-1-Remix-1.MP3" type="audio/mp3"/>
                             </audio>
                         </td>
                         <td>

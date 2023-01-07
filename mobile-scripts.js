@@ -6,10 +6,41 @@ function init() {
             filename = filename.replace('mobile-', '');
         }
         else if (filename == '') {
-            filename = 'index.html'
+            filename = 'index.html';
         };
         document.location = filename;
     };
+    const location = document.location.href.substring(document.location.href.lastIndexOf('/') +1);
+    if (location != 'mobile-index.html' && location != 'mobile-music.html') {
+        setTimeout(() => {
+            next_track();
+        }, 1000);
+    };
+};
+
+function next_track() {
+    const audio = document.getElementById('audio');
+    audio.pause();
+    if (track%2 == 0) {
+        audio.src= 'Music/R4R theme.mp3';
+    }
+    else {
+        audio.src = 'Music/March Of Leader Ransome.mp3';
+    };
+    track++;
+    setTimeout(() => {
+        audio.play();
+    }, 500);
+};
+
+function introbox_cleared() {
+    const introbox = document.getElementById('introbox');
+    introbox.classList.add('cleared');
+    setTimeout(() => {
+        introbox.style.with = 0;
+        introbox.style.height = 0;
+        next_track();
+    }, 1001);
 };
 
 function openNav() {
@@ -76,5 +107,6 @@ function gallery_move() {
 };
 
 var gallery_num = 1;
+var track = Math.floor(Math.random() *2);
 
 window.onload = init()

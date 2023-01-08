@@ -49,6 +49,8 @@ table.gallery {
     padding: 40px;
     background-color: #6d6c6c;
     box-shadow: 0 0 70px #6d6c6c;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 div.introbox {

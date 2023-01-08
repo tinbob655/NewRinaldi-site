@@ -87,11 +87,9 @@ function gallery_move() {
 };
 
 function next_track() {
-    console.log('next track fired');
     const audio = document.getElementById('audio');
     audio.pause();
     audio.volume = 1.0;
-    console.log(sessionStorage.getItem('current track'));
     if (clense_src_input(sessionStorage.getItem('current track')) == 'Jumping Around.mp3') {
         audio.src = 'Music/Skidaddle.mp3';
     }
@@ -107,8 +105,8 @@ function audio_fadin() {
     const audio = document.getElementById('audio');
     async function fadin() {
         const timer = milliseconds => new Promise (res => setTimeout(res, milliseconds));
-        for (let i = 0; 0 < 100; i++) {
-            audio.volume = i/100;
+        for (let e = 0; e < 100; e++) {
+            audio.volume = e/100;
             await timer(50);
         };
     };
@@ -116,12 +114,10 @@ function audio_fadin() {
 };
 
 function first_track(initial) {
-    console.log('first track fired. initial = '+initial);
     const audio = document.getElementById('audio');
     audio.load();
     if (initial == 'initial') {
         var track = Math.floor(Math.random() *2);
-        console.log(track);
         if (track == 0) {
             audio.src = 'Music/Jumping Around.mp3';
         }

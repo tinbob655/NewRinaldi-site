@@ -117,6 +117,8 @@ img.gallery {
 img.rounded {
     display: block;
     border-radius: 50%;
+    height: 300px;
+    width: 300px;
 }
 
 th.link {

@@ -1,15 +1,15 @@
 function init() {
-    if (navigator.userAgentData.mobile == false) {     //desktop destection and redirection
-        var HTMLfilename = document.location.href;
-        var filename = HTMLfilename.substring(HTMLfilename.lastIndexOf('/') + 1);
-        if (filename != '') {
-            filename = filename.replace('mobile-', '');
-        }
-        else if (filename == '') {
-            filename = 'index.html';
-        };
-        document.location = filename;
-    };
+    // if (navigator.userAgentData.mobile == false) {     //desktop destection and redirection
+    //     var HTMLfilename = document.location.href;
+    //     var filename = HTMLfilename.substring(HTMLfilename.lastIndexOf('/') + 1);
+    //     if (filename != '') {
+    //         filename = filename.replace('mobile-', '');
+    //     }
+    //     else if (filename == '') {
+    //         filename = 'index.html';
+    //     };
+    //     document.location = filename;
+    // };
     const location = document.location.href.substring(document.location.href.lastIndexOf('/') +1);
     if (location == 'mobile-index.html') {      //introbox activation checker
         if (sessionStorage.getItem('first load') == 'false') {

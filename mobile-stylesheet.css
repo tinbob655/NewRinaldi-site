@@ -53,6 +53,18 @@ table.gallery {
     margin-right: 5vw;
 }
 
+div.footer {
+    font-family: monospace;
+    color: #6b6b6b;
+    text-align: center;
+    font-weight: 5;
+    font-size: 25px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 div.introbox {
     position: fixed;
     padding-top: 10vh;

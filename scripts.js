@@ -9,6 +9,7 @@ function init() {
             filename = 'mobile-index.html';
         };
         document.location = filename;
+        return('');
     };
     const location = document.location.href.substring(document.location.href.lastIndexOf('/') +1);
     if (location == 'index.html') {         //introbox activation checker

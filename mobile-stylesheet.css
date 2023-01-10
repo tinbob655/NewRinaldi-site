@@ -29,10 +29,11 @@ body {
 }
 
 audio {
-    transform: scale(2, 2);
+    transform: scale(1.5, 1.5);
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 }
 
 button {

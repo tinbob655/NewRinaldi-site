@@ -1,5 +1,6 @@
 function init() {
     if (window.mobileCheck == true) {    //mobile detection and redirection
+        var HTMLfilename = document.location.href;
         var filename = HTMLfilename.substring(HTMLfilename.lastIndexOf('/') + 1);
         if (filename != '') {
             filename = 'mobile-'+filename;

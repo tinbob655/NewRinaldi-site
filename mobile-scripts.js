@@ -1,5 +1,5 @@
 function init() {
-    if (window.mobileCheck == false) { //desktop detection and redirection
+    if (window.mobileCheck == false || navigator.userAgentData == false) { //desktop detection and redirection
         var HTMLfilename = document.location.href;
         var filename = HTMLfilename.substring(HTMLfilename.lastIndexOf('/') + 1);
         if (filename != '') {

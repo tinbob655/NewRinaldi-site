@@ -22,8 +22,8 @@ function init() {
             }, 1000);
         };
     };
-    if ((location != 'mobile-index.html' || sessionStorage.getItem('first load') == 'false') && location != 'mobile-music.html') {       //audio activaiton
-        setTimeout(() => {
+    if ((location != 'mobile-index.html' || sessionStorage.getItem('first load') == 'false') && (location != 'mobile-music.html') && (location != 'mobile-media.html')) {
+        setTimeout(() => {      //audio activation
             first_track('not initial');
             audio_fadin();
         }, 1000);

@@ -23,7 +23,7 @@ function init() {
             }, 1000);
         };
     };
-    if ((location != 'index.html' || sessionStorage.getItem('first load') == 'false') && location != 'music.html') {  //audio activation
+    if ((location != 'index.html' || sessionStorage.getItem('first load') == 'false') && (location != 'music.html') && (location != 'media.html')) {
         setTimeout(()=> {
             first_track('not initial');
             audio_fadin();
